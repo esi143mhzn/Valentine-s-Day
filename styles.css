@@ -1,0 +1,142 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffe6ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 26px 22px;
+  text-align: center;
+  color: #c9184a;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  animation: fade 0.5s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.nickname {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.gifts {
+  font-size: 2.4rem;
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.gifts img {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.question {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin: 18px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+button {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  border-radius: 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.yes { background: #ff4d6d; color: #fff; }
+.no { background: #ffe6ee; color: #c9184a; }
+
+.error {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  display: none;
+  animation: shake 0.4s;
+}
+
+.memory-img {
+  width: 100px !important;          /* Fixed square size */
+  height: 100px !important;         /* Equal width & height for circle */
+  border-radius: 50% !important;    /* Circle */
+  object-fit: cover;     /* Fill circle without distortion */
+  margin-bottom: 6px;
+}
+
+.memory-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Wedding photo */
+#photo {
+  width: 100%;
+  border-radius: 18px;
+  margin: 14px 0;
+  display: none;
+}
+
+/* Animations */
+@keyframes fade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+/* Hearts */
+.heart {
+  position: fixed;
+  top: -20px;
+  font-size: 20px;
+  color: #ff4d6d;
+  animation: fall linear forwards;
+  pointer-events: none;
+  z-index: 1;
+}
+@keyframes fall { to { transform: translateY(110vh); opacity: 0; } }
+
+/* Mute button */
+#muteBtn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: #ff4d6d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  z-index: 3;
+}
+
