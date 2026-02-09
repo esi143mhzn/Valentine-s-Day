@@ -1,10 +1,10 @@
 /* Questions */
 const steps = [
-  { q: "Hey Mutu! Ready for a sweet Valentine’s challenge just for us? 😍", img: "images/1.png", err: "No vanna mildaina k MUTU 😤❤️" },
-  { q: "Tell me...are you the prettiest girl in the world? 😘", img: "images/2.webp", err: "No vanna mildaina k MUTU 😤❤️" },
-  { q: "Do you think we were made to be a perfect pair? 💑", img: "images/3.jpg", err: "No vanna mildaina k MUTU 😤❤️" },
-  { q: "Mutu, do I make you feel loved every day? ❤️", img: "images/4.webp", err: "I will try ajhai dherai hai ta Mutu! (aile chai yes nai vandeu na) 🥺❤️" },
-  { q: "Will you be my Valentine forever and always? 🌹", img: "images/5.jpg", err: "Access denied 🚫😤, you are stuck with me hai !! ❤️" },
+  { q: "Hey Mutu! Ready for a sweet Valentine’s challenge just for us? 😍", img: "images/1.png", err: "No, vanna mildaina k MUTU 😤❤️" },
+  { q: "Tell me...are you the prettiest girl in the world? 😘", img: "images/2.webp", err: "Yes, you are the prettiest girl MUTU. Hence, click YES 😍❤️" },
+  { q: "Do you think we were made to be a perfect pair? 💑", img: "images/3.jpg", err: "Umuhaaaa Umuhaaaa Chuppaaaa mero MUTU lai...Yes say my cutiee, 😘😘" },
+  { q: "Mutu, do I make you feel loved every day? ❤️", img: "images/4.webp", err: "I will try ajhai dherai hai ta Mutu! (aile chai YES nai vandeu na) 🥺❤️" },
+  { q: "Will you be my Valentine forever and always? 🌹", img: "images/5.jpg", err: "Access denied 🚫😤—guess my heart chose you and locked the door ❤️" },
   { q: "Choose your gifts ❤️", end: true, gifts: true }
 ];
 
